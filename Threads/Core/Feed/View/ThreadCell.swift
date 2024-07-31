@@ -34,10 +34,12 @@ struct ThreadCell: View {
                                 .foregroundColor(Color(.darkGray))
                         }
                     }
-                    Text("Actor")
-                        .font(.footnote)
-                        .foregroundColor(.gray)
-                        .multilineTextAlignment(.leading)
+                    Image("denzel")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 200)
+                        .cornerRadius(8)
+                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 }
             }
             HStack(spacing: 16) {

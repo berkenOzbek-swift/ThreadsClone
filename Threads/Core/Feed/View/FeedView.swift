@@ -23,9 +23,21 @@ struct FeedView: View {
             .navigationTitle("Threads")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    
+                }label: {
+                    Image(systemName: "arrow.counterclockwise")
+                        .foregroundColor(.black)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    FeedView()
+    NavigationStack {
+        FeedView()
+    }
 }

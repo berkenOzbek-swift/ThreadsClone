@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78B043D42C5A499700335E17 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B043D32C5A499700335E17 /* EditProfileView.swift */; };
+		78B043D72C5A4DD200335E17 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B043D62C5A4DD200335E17 /* CircularProfileImageView.swift */; };
+		78B043DA2C5A536D00335E17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B043D92C5A536D00335E17 /* UserCell.swift */; };
+		78B043DE2C5A65E400335E17 /* ProfileThreadsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B043DD2C5A65E400335E17 /* ProfileThreadsFilter.swift */; };
 		78BB35BD2C513D5B00C4FE5D /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB35BC2C513D5B00C4FE5D /* ThreadsApp.swift */; };
 		78BB35BF2C513D5B00C4FE5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB35BE2C513D5B00C4FE5D /* ContentView.swift */; };
 		78BB35C12C513D5F00C4FE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BB35C02C513D5F00C4FE5D /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78B043D32C5A499700335E17 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		78B043D62C5A4DD200335E17 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		78B043D92C5A536D00335E17 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		78B043DD2C5A65E400335E17 /* ProfileThreadsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadsFilter.swift; sourceTree = "<group>"; };
 		78BB35B92C513D5B00C4FE5D /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BB35BC2C513D5B00C4FE5D /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		78BB35BE2C513D5B00C4FE5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +60,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78B043D02C5A495D00335E17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78B043DD2C5A65E400335E17 /* ProfileThreadsFilter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78B043D12C5A496300335E17 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				78B043D22C5A498400335E17 /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		78B043D22C5A498400335E17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78B043D32C5A499700335E17 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78B043D52C5A4DBB00335E17 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				78B043D62C5A4DD200335E17 /* CircularProfileImageView.swift */,
+				78B043D92C5A536D00335E17 /* UserCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		78BB35B02C513D5B00C4FE5D = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +164,7 @@
 		78BB35CF2C513D9E00C4FE5D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				78B043D52C5A4DBB00335E17 /* Components */,
 				78BB35EA2C514EAC00C4FE5D /* Activity */,
 				78BB35D22C513E4300C4FE5D /* Authentication */,
 				78BB35E22C514E1200C4FE5D /* Explore */,
@@ -252,6 +294,8 @@
 		78BB35EE2C514ED500C4FE5D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				78B043D12C5A496300335E17 /* EditProfile */,
+				78B043D02C5A495D00335E17 /* Model */,
 				78BB35EF2C514EDB00C4FE5D /* View */,
 			);
 			path = Profile;
@@ -342,10 +386,14 @@
 				78BB35ED2C514EC000C4FE5D /* ActivityView.swift in Sources */,
 				78BB35BF2C513D5B00C4FE5D /* ContentView.swift in Sources */,
 				78BB35E92C514E8A00C4FE5D /* ThreadsCreationView.swift in Sources */,
+				78B043DE2C5A65E400335E17 /* ProfileThreadsFilter.swift in Sources */,
+				78B043D72C5A4DD200335E17 /* CircularProfileImageView.swift in Sources */,
+				78B043DA2C5A536D00335E17 /* UserCell.swift in Sources */,
 				78BB35DA2C51459000C4FE5D /* ThreadsTextFieldModifier.swift in Sources */,
 				78BB35BD2C513D5B00C4FE5D /* ThreadsApp.swift in Sources */,
 				78BB35E42C514E3200C4FE5D /* ExploreView.swift in Sources */,
 				78BB35F12C514EE600C4FE5D /* ProfileView.swift in Sources */,
+				78B043D42C5A499700335E17 /* EditProfileView.swift in Sources */,
 				78BB35D72C51441A00C4FE5D /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
